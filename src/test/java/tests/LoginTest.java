@@ -33,6 +33,7 @@ public class LoginTest extends DriverLifeCycleSetting {
     public void testLoginVoid() {
         loginForm = new LoginFormPO(driver);
         loginForm.with("", "");
+        // assertion
         assertTrue(loginForm.invalidBoxIsPresent());
     }
 }
