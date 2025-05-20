@@ -28,5 +28,12 @@ public class LoginTest extends DriverLifeCycleSetting {
         loginForm.with("user", "error");
         assertTrue(loginForm.invalidBoxIsPresent());
     }
+
+    @Test
+    public void testLoginVoid() {
+        loginForm = new LoginFormPO(driver);
+        loginForm.with("", "");
+        assertTrue(loginForm.invalidBoxIsPresent());
+    }
 }
 
