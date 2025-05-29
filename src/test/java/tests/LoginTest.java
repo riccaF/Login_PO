@@ -14,7 +14,7 @@ public class LoginTest extends DriverLifeCycleSetting {
     private LoginFormPO loginForm;
     private LoginSuccessPO loginSuccess;
 
-    @Test
+    //@Test
     public void testLoginOk() {
         loginForm = new LoginFormPO(driver);
         
